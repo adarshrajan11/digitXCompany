@@ -1,0 +1,218 @@
+.swiperSlide {
+    width: 90% !important;
+    max-width: 420px;
+}
+
+.carouselWrapper {
+    /* background-color: #111; */
+    padding: 4rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+.headingWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.description {
+    top: 0;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #aaa;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+
+    color: #eee;
+    border-radius: 1rem;
+    margin: 0 0.5rem;
+    /* height: 100%;   */
+    min-height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(180deg, #1A1A1A -29.71%, rgba(243, 235, 235, 0) 75.89%);
+
+    animation: fadeInUp 0.6s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    animation: glow 0.6s ease-in-out forwards;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding: 10% 15% 0 18%;
+
+    width: 360px;
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-weight: bold;
+    color: #fff;
+}
+
+.role {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.secondDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border: 1px solid #444;
+}
+
+/* chat bubble */
+.chatBubbleWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+
+    margin-bottom: 1.5rem;
+}
+
+.twitterIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 18%;
+    object-fit: cover;
+    margin-top: 1rem;
+
+}
+
+.chatBubble {
+    /* background-color: #2a2a2a; */
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    position: relative;
+    min-height: 267px;
+    color: #eee;
+    min-width: 404px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    font-size: 1rem;
+    text-align: left;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatTail {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #2a2a2a;
+}
+
+.propic {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 1rem;
+    border: 2px solid #444;
+}
+
+.textWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4fc3f7;
+    margin-left: 3%;
+}
+
+.authorDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+}
+
+.author {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.role {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 0.2rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover highlight */
+.card:hover .author {
+    color: #4fc3f7;
+}
+
+.card:hover .role {
+    color: #90caf9;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

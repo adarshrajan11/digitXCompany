@@ -1,0 +1,12 @@
+/* Home.module.css */
+
+.homeContainer {
+    position: relative;
+}
+
+.stickyNavbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}

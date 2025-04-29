@@ -1,0 +1,93 @@
+.section {
+    position: relative;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.7) 100%);
+    padding: 6rem 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.leftVector,
+.rightVector {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: auto;
+    /* opacity: 0.1; */
+    z-index: 1;
+}
+
+.leftVector {
+    left: 0;
+}
+
+.rightVector {
+    right: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ccc;
+    font-family: 'Inter', sans-serif;
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.primaryButton,
+.secondaryButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primaryButton {
+    background-color: white;
+    color: black;
+}
+
+.secondaryButton {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+}
+
+.primaryButton:hover {
+    background-color: #f0f0f0;
+}
+
+.secondaryButton:hover {
+    background-color: #333;
+}
+
+.branding img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
