@@ -86,8 +86,32 @@
 }
 
 .branding img {
-    width: 250px;
+    width: 834px;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    display: block;
+}
+
+.branding {
+    position: relative;
+
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.blurOverlay {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 100vw;
+    height: 60%;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    z-index: 1;
+    pointer-events: none;
+    /* Allows click-through */
 }

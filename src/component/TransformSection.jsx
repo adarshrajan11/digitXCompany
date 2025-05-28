@@ -25,7 +25,9 @@ const TransformSection = () => {
 
                 <div className={styles.branding}>
                     <img src={digitX} alt="DigitX" />
+                    <div className={styles.blurOverlay}></div>
                 </div>
+
             </div>
         </section>
     );
